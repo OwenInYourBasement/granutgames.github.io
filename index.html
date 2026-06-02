@@ -115,6 +115,10 @@
 
     <a href="https://ldj.am/@granut100" target="_blank" id="ld" class="ld-card">ludum dare games</a>
 
+    <a href="https://granut100.itch.io/orlo-the-space-dasher" target="_blank">
+        <img src="orlo.png" id="orlo" class="dvd-bounce" alt="Orlo the Space Dasher">
+    </a>
+
     <script>
         const speed = 2;
 
@@ -123,6 +127,9 @@
             const ldEl = document.getElementById('ld');
             ldEl.style.width = dvdEl.offsetWidth + 'px';
             ldEl.style.height = dvdEl.offsetHeight + 'px';
+            const orloEl = document.getElementById('orlo');
+            orloEl.style.width = dvdEl.offsetWidth + 'px';
+            orloEl.style.height = dvdEl.offsetHeight + 'px';
             run();
         }
 
@@ -161,6 +168,7 @@
         function run() {
             cards.push(makeCard('dvd', cards));
             cards.push(makeCard('ld', cards));
+            cards.push(makeCard('orlo', cards));
             animate();
         }
 
