@@ -123,6 +123,10 @@
         <img src="bearie.png" id="bearie" class="dvd-bounce" alt="Bearie &amp; Bruno">
     </a>
 
+    <a href="https://store.steampowered.com/app/5620330/Sylvia_Sparrow_and_the_Witchs_Paintings/?utm_source=website" target="_blank">
+        <img src="sylvia.png" id="sylvia" class="dvd-bounce" alt="Sylvia Sparrow and the Witch's Paintings">
+    </a>
+
     <script>
         const speed = 2;
 
@@ -137,6 +141,9 @@
             const bearieEl = document.getElementById('bearie');
             bearieEl.style.width = dvdEl.offsetWidth + 'px';
             bearieEl.style.height = dvdEl.offsetHeight + 'px';
+            const sylviaEl = document.getElementById('sylvia');
+            sylviaEl.style.width = dvdEl.offsetWidth + 'px';
+            sylviaEl.style.height = dvdEl.offsetHeight + 'px';
             run();
         }
 
@@ -177,6 +184,7 @@
             cards.push(makeCard('ld', cards));
             cards.push(makeCard('orlo', cards));
             cards.push(makeCard('bearie', cards));
+            cards.push(makeCard('sylvia', cards));
             animate();
         }
 
